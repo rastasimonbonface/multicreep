@@ -1,0 +1,24 @@
+extends layout
+
+block content
+    .mdl-textfield.mdl-js-textfield
+      input#url.mdl-textfield__input.url(type='text' style='width: 600px;')
+      |
+      label.mdl-textfield__label(for='url') url
+    br
+    .mdl-textfield.mdl-js-textfield
+      input#min.mdl-textfield__input.min(type='text')
+      |
+      label.mdl-textfield__label(for='min') min
+    .mdl-textfield.mdl-js-textfield
+      input#max.mdl-textfield__input.max(type='text')
+      |
+      label.mdl-textfield__label(for='max') max
+    .mdl-textfield.mdl-js-textfield
+      input#ext.mdl-textfield__input.ext(type='text')
+      |
+      label.mdl-textfield__label(for='max') ext
+    |
+    button.btnDo.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-button--accent do
+    .cont
+    script(src='js/img.js')

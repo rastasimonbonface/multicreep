@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  .mdl-textfield.mdl-js-textfield
+    input#item.mdl-textfield__input.item(type='text')
+    label.mdl-textfield__label(for='item') Item ID
+  .mdl-textfield.mdl-js-textfield
+    input#color.mdl-textfield__input.color(type='text')
+    label.mdl-textfield__label(for='color') Color ID
+  button.btnDo.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-button--accent do
+  button.btnPr.mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button--colored
+    i.material-icons keyboard_arrow_left
+  button.btnNe.mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button--colored
+    i.material-icons keyboard_arrow_right
+  button.btnSe.mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button--colored
+    i.material-icons fast_forward
+  .info
+  .vid-cont
+  .color
+    button.btncolor.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-button--accent(data='9325')
+      img(src='https://www.cdn-outlet.com/photos/options/8131877-9325-S.jpg')
+    button.btncolor.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-button--accent(data='10890')
+      img(src='https://www.cdn-outlet.com/photos/options/8131877-10890-S.jpg')
+  .img-cont
+  script(src='js/claire.js')
