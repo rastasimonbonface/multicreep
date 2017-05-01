@@ -3,7 +3,11 @@
                 let url = $('.url').val();
                 let min = $('.min').val();
                 let max = $('.max').val();
-                let ext = $('.ext').val();
+                let ext = ".jpg";
+                if($('.extpicker').val() != 'custom'){
+                    ext = $('.extpicker').val();
+                } else{
+                ext = $('.ext').val();}
 				let html ='';
                 console.log('min: ' + min + ' max: ' + max)
                 for(i = min; i < max; i++){
@@ -18,3 +22,17 @@
                     DO();
 				})
 		})
+
+
+$(function() {
+    $('.extcont').hide();
+$('.extpicker').change(function() {
+    let selected = $(this).val();
+    if(selected == 'custom'){
+      $('.extcont').show();
+    }
+    else{
+      $('.extcont').hide();
+    }
+});
+});

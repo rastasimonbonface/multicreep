@@ -14,7 +14,12 @@ block content
       input#max.mdl-textfield__input.max(type='text')
       |
       label.mdl-textfield__label(for='max') max
-    .mdl-textfield.mdl-js-textfield
+    select.extpicker(name='extpicker')
+      option(value='.jpg') jpg
+      option(value='.png') png
+      option(value='.jpeg') jpeg
+      option(value='custom') custom ext
+    .mdl-textfield.mdl-js-textfield.extcont
       input#ext.mdl-textfield__input.ext(type='text')
       |
       label.mdl-textfield__label(for='max') ext
